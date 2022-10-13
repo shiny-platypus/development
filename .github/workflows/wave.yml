@@ -1,0 +1,10 @@
+name: wave to friends
+on: pull_request
+jobs:
+  wave-to-universe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - run: 'echo "${{ github.repository }} is waving hi to everyone!"'
+      - run: 'echo "We can run all sorts of jobs here"'
